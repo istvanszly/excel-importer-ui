@@ -1,2 +1,2 @@
 # excel-importer-ui
-Excel importer
+Excel importer with Angular
