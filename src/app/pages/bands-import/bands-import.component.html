@@ -1,0 +1,17 @@
+<div>
+    <form #excelFileForm (ngSubmit)="onSubmit()" method="post" enctype="multipart/form-data">
+        <div class="form-inner-container">
+            <div class="form-group">
+                <label for="excelFile">Excel file</label>
+                <input type="file" id="excelFile" (change)="onFileSelection($event)" class="file-input" />
+            </div>
+            <div class="form-group">
+                <label for="truncateTableBeforeInsert">Truncate table before insert?</label>
+                <input type="checkbox" id="truncateTableBeforeInsert" (change)="onCheckboxChange($event)" />
+            </div>
+            <div class="form-group">
+                <button mat-raised-button color="primary" type="submit" [disabled]="submitInProgress">Import</button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,12 @@
+<div class="container">
+    <div>
+        <h1>Excel Importer</h1>
+    </div>
+    <div class="navigation-container">
+        <button mat-stroked-button color="primary" [routerLink]="['bands/import']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Import Bands</button>
+        <button mat-stroked-button color="primary" [routerLink]="['bands/list']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">List Bands</button>
+    </div>
+    <div class="outlet-container">
+        <router-outlet></router-outlet>
+    </div>
+</div>
